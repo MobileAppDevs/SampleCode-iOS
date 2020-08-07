@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  MYMA
-//
-//  Created by Ongraph on 09/08/16.
-//  Copyright © 2016 Ongraph. All rights reserved.
-//
 
 import UIKit
 import Alamofire

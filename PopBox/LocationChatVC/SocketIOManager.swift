@@ -1,10 +1,4 @@
-//
-//  SocketIOManager.swift
-//  PopboxChat
-//
-//  Created by Ashish Sharma on 12/11/17.
-//  Copyright © 2017 Noto. All rights reserved.
-//
+
 
 import UIKit
 import SocketIO

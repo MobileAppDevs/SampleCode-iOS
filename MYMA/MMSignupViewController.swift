@@ -1,10 +1,4 @@
-//
-//  MMSignupViewController.swift
-//  MYMA
-//
-//  Created by Ongraph on 11/08/16.
-//  Copyright © 2016 Ongraph. All rights reserved.
-//
+
 
 import UIKit
 import Alamofire

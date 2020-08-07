@@ -1,10 +1,3 @@
-//
-//  BAEventDetailScreenViewController.swift
-//  Freebeer
-//
-//  Created by admin on 20/11/17.
-//  Copyright © 2017 Ongraph. All rights reserved.
-//
 
 import UIKit
 import Alamofire

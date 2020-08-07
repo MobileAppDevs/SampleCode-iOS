@@ -1,18 +1,4 @@
-//
-//  PUserProfileVC.swift
-//  Popbox
-//
-//  Created by Chandan on 09/01/18.
-//  Copyright © 2018 mac. All rights reserved.
-//
 
-//
-//Just FYI, users can see other users profiles from several screens:
-//- People - Find People (recommendations) screen
-//- People - Friends screen
-//- Location Chat screen
-//- Location Profile screen
-//- Notifications screen
 
 
 import UIKit

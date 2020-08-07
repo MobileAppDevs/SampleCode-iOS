@@ -1,10 +1,3 @@
-//
-//  PFriendListVC.swift
-//  Popbox
-//
-//  Created by Ongraph on 3/6/18.
-//  Copyright © 2018 mac. All rights reserved.
-//
 
 import UIKit
 

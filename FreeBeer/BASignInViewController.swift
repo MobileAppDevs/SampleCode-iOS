@@ -1,10 +1,3 @@
-//
-//  BALoginViewController.swift
-//  Freebeer
-//
-//  Created by Ongraph on 6/8/17.
-//  Copyright © 2017 Ongraph. All rights reserved.
-//
 
 import UIKit
 

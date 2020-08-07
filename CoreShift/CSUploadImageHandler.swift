@@ -1,10 +1,3 @@
-//
-//  CSUploadImageHandler.swift
-//  CoreShift
-//
-//  Created by Ongraph on 16/12/16.
-//  Copyright © 2016 Ongraph. All rights reserved.
-//
 
 import UIKit
 import Alamofire

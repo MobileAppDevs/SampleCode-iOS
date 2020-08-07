@@ -1,10 +1,4 @@
-//
-//  BASignUpViewController.swift
-//  Freebeer
-//
-//  Created by Ongraph on 6/12/17.
-//  Copyright © 2017 Ongraph. All rights reserved.
-//
+
 
 import UIKit
 import Alamofire
