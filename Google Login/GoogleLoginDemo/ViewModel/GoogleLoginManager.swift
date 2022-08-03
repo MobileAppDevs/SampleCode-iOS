@@ -12,7 +12,7 @@ import GoogleSignIn
 
 class GoogleLoginManager{
     func getUserInfoFromGoogleSignIn(controller:UIViewController, completion:@escaping(_ user: UserDetail?)->Void){
-        let signInConfig = GIDConfiguration.init(clientID: "733957831458-s27s9cedfv55ndh6rdvqda3n46kl7f48.apps.googleusercontent.com")
+        let signInConfig = GIDConfiguration.init(clientID: "your client-ID")
         GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: controller) { user, error in
             guard error == nil else { return }
             guard let user = user else { return }
