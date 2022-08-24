@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="datebubble" id="KGk-i7-Jjw" customClass="UserDateViewCell" customModule="Popbox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="34.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zku-Mq-I24">
+                        <rect key="frame" x="133.5" y="4.5" width="53.5" height="25"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="3.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyo-Sm-MV9">
+                        <rect key="frame" x="143.5" y="8.5" width="33.5" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="zku-Mq-I24" firstAttribute="bottom" secondItem="Vyo-Sm-MV9" secondAttribute="bottom" constant="4" id="0sF-Bt-dDp"/>
+                    <constraint firstItem="zku-Mq-I24" firstAttribute="trailing" secondItem="Vyo-Sm-MV9" secondAttribute="trailing" constant="10" id="8Oj-qW-vAf"/>
+                    <constraint firstItem="zku-Mq-I24" firstAttribute="leading" secondItem="Vyo-Sm-MV9" secondAttribute="leading" constant="-10" id="NKe-O0-bJN"/>
+                    <constraint firstItem="Vyo-Sm-MV9" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="YVc-zl-wTO"/>
+                    <constraint firstItem="Vyo-Sm-MV9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ssd-Vd-Zrh"/>
+                    <constraint firstItem="zku-Mq-I24" firstAttribute="top" secondItem="Vyo-Sm-MV9" secondAttribute="top" constant="-4" id="zaI-V3-IhU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateBubbleimgView" destination="zku-Mq-I24" id="uVK-aL-AUz"/>
+                <outlet property="lblDate" destination="Vyo-Sm-MV9" id="NAE-l3-3wu"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
