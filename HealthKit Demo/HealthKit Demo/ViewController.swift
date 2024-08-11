@@ -2,22 +2,27 @@
 //  ViewController.swift
 //  HealthKit Demo
 //
-//  Created by Amit on 20/04/24.
+//  Created by Amit on 24/07/24.
 //
 
 import UIKit
 import HealthKit
 
 class ViewController: UIViewController {
-    
+    //MARK: - IBOutlet's
     @IBOutlet weak var stepsCount: UILabel!
     @IBOutlet weak var sleepingHrs: UILabel!
     @IBOutlet weak var energyLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
     
+    //MARK: - Property
     var healthStore = HKHealthStore()
     
+    //MARK: - viewDidLoad
+    /*
+     this method is calling for initial when this screen will appear
+     */
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -27,12 +32,16 @@ class ViewController: UIViewController {
         self.askForHealthKitPermissions()
     }
     
+    /*
+     Show initial data on screen
+     */
     func setUpInitial() {
         self.stepsCount.text = "0 step"
         self.sleepingHrs.text = "Sleep Time : 00 Hr 00 min 00 sec"
         self.energyLabel.text = "Energy : 0 kcal"
     }
-    // Ask For Permisssions
+    
+    // Ask For Permisssions for Get the data from HealthKit
     func askForHealthKitPermissions() {
         //Set Types we need to take permissions set here
         let allTypes = Set([HKObjectType.quantityType(forIdentifier: .activeEnergyBurned)!,HKObjectType.quantityType(forIdentifier: .stepCount)!,HKObjectType.categoryType(forIdentifier:HKCategoryTypeIdentifier.sleepAnalysis)!])
@@ -49,6 +58,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // User can select the date from datepicker then show Health data based on selected date on screen
     @IBAction func datePickerChanged(_ sender: Any) {
         let startDate = Calendar.current.date(byAdding: .day, value: -1, to: datePicker.date)
         let startDateString = "\(startDate!)"
@@ -59,9 +69,8 @@ class ViewController: UIViewController {
     
 }
 
-// Access Steps, Sleep Time and Active Energy(Calories Burn)
 extension ViewController {
-
+    // Access Steps, Sleep Time and Active Energy(Calories Burn)
     func fetchHealthData(_ startDate: String, _ endDate: String) {
         // Formatting Start Date
         let isoDate = startDate
@@ -120,7 +129,6 @@ extension ViewController {
                 end: endDate,
                 options: .strictEndDate
             )
-            
             // Use a sortDescriptor to get the recent data first
             let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierEndDate, ascending: false)
             
